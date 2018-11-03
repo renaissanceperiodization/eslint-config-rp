@@ -1,24 +1,24 @@
-## eslint-config-planet
+## eslint-config-rp
 
-This package provides shareable [ESLint](http://eslint.org/) configurations for JavaScript projects that conform with Planet Labs' coding style.
+This package provides shareable [ESLint](http://eslint.org/) configurations for JavaScript projects that conform with Renaissance Periodization's coding style.
 
 ### Installation
 
 To make use of this config, install ESLint (>= 2.0) and this package as a development dependency of your project:
 
-    npm install eslint eslint-config-planet --save-dev
+    npm install eslint eslint-config-rp --save-dev
 
 Next, add an `eslintConfig` member to your project's `package.json`.  At a minimum, this config file must include an `extends` member:
 
 ```json
 {
   "eslintConfig": {
-    "extends": "planet"
+    "extends": "rp"
   }
 }
 ```
 
-See the ESLint [configuration guide](http://eslint.org/docs/user-guide/configuring) for details on additional configuration options.  Any rules configured in your `package.json` file will override those provided by the `eslint-config-planet` package.
+See the ESLint [configuration guide](http://eslint.org/docs/user-guide/configuring) for details on additional configuration options.  Any rules configured in your `package.json` file will override those provided by the `eslint-config-rp` package.
 
 ### Use
 
@@ -40,13 +40,13 @@ See the ESLint [CLI guide](http://eslint.org/docs/user-guide/command-line-interf
 
 In addition to running the linter when your tests are run, you should configure your editor to run the linter as well.  See the [ESLint integration page](http://eslint.org/docs/user-guide/integrations#editors) to find details on configuring your editor to warn you of ESLint errors.
 
-See the [examples directory](https://github.com/planetlabs/eslint-config-planet/tree/master/examples) for more usage examples.
+See the [examples directory](https://github.com/renaissanceperiodization/eslint-config-rp/tree/master/examples) for more usage examples.
 
 ### Profiles
 
-The `eslint-config-planet` package includes a number of ESLint configuration profiles for different types of projects.
+The `eslint-config-rp` package includes a number of ESLint configuration profiles for different types of projects.
 
-#### `planet` (base config)
+#### `rp` (base config)
 
 The "base" config is suitable for Node projects or browser-based projects using a CommonJS module loader (e.g. [Browserify](http://browserify.org/) or [Webpack](http://webpack.github.io/)).
 
@@ -54,14 +54,14 @@ Example configuration in `package.json`:
 ```json
 {
   "eslintConfig": {
-    "extends": "planet"
+    "extends": "rp"
   }
 }
 ```
 
-#### `planet/react`
+#### `rp/react`
 
-The `planet/react` config is suitable for projects using [React](https://facebook.github.io/react/).  This extends the base config to include the React plugin, enable JSX parsing, and run React specific rules.  To use this profile, you'll need to install the `eslint-plugin-react` package:
+The `rp/react` config is suitable for projects using [React](https://facebook.github.io/react/).  This extends the base config to include the React plugin, enable JSX parsing, and run React specific rules.  To use this profile, you'll need to install the `eslint-plugin-react` package:
 
     npm install eslint-plugin-react --save-dev
 
@@ -69,7 +69,7 @@ Then your minimal configuration in `package.json` would look like this:
 ```json
 {
   "eslintConfig": {
-    "extends": "planet/react"
+    "extends": "rp/react"
   }
 }
 ```
@@ -91,12 +91,14 @@ Publishing a new minor release would look like this:
     git push --tags origin master
     npm publish
 
-[![Current Status](https://secure.travis-ci.org/planetlabs/eslint-config-planet.png?branch=master)](https://travis-ci.org/planetlabs/eslint-config-planet)
+[![Current Status](https://secure.travis-ci.org/renaissanceperiodization/eslint-config-rp.png?branch=master)](https://travis-ci.org/renaissanceperiodization/eslint-config-rp)
 
 ### License
 
-© Planet Labs, Inc.
+© 2018 Renaissance Periodization, LLC.
 
-Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) (the "License"); you may not use this file except in compliance with the License.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See [the License](http://www.apache.org/licenses/LICENSE-2.0) for the specific language governing permissions and limitations under the License.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

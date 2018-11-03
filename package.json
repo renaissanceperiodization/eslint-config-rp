@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-planet",
-  "version": "17.0.1",
-  "description": "ESLint config for Planet projects",
+  "name": "eslint-config-rp",
+  "version": "1.0.0",
+  "description": "ESLint config for RP projects",
   "main": "index.js",
   "scripts": {
     "lint": "eslint . examples",
@@ -9,27 +9,25 @@
     "check-es6": "eslint --print-config examples/es6/.eslintrc | eslint-config-prettier-check",
     "check-react": "eslint --print-config examples/react/.eslintrc | eslint-config-prettier-check"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/planetlabs/eslint-config-planet.git"
+    "url": "git://github.com/renaissanceperiodzation/eslint-config-rp.git"
   },
   "devDependencies": {
-    "eslint": "^5.3.0",
-    "eslint-plugin-react": "^7.11.1",
-    "install": "^0.12.1",
-    "npm": "^6.4.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "eslint": "5.8.0",
+    "eslint-plugin-react": "7.11.1",
+    "react": "16.6.0",
+    "react-dom": "16.6.0"
   },
   "peerDependencies": {
     "eslint": ">= 5.3"
   },
   "dependencies": {
-    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-prettier": "3.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "prettier": "^1.14.2"
+    "eslint-plugin-prettier": "3.0.0",
+    "prettier": "1.14.3"
   },
   "eslintConfig": {
     "extends": "./index.js"

@@ -26,4 +26,9 @@ module.exports = {
     'react/react-in-jsx-scope': 'error',
     'react/sort-prop-types': 'off',
   },
+  settings: {
+    react: {
+      version: 'latest',
+    },
+  },
 };
